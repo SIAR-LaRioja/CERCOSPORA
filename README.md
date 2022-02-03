@@ -1,16 +1,18 @@
 # CERCOSPORA
-Código para calcular riesgo de ataque de cercospora de acuerdo al modelo Rioja desarrollado por el GO de Enfermedades Foliares
+**Código para calcular riesgo de ataque de cercospora de acuerdo al modelo Rioja y al modelo de Sheng y Teng (1989)**
 
-Dentro de los trabajos desarrollados para el GO Enfermedades Foliares se desarrolló un código para realizar el cálculo del riesgo
-de ataque de Cercospora en remolacha azucarera
+Dentro de los trabajos desarrollados para el GO Enfermedades Foliares, financiado por Gobierno Rioja y la UE, y en el que colaboraron:
+AIMCRA, SIAR-Gobierno de LA Rioja, Asaja y Cooperativa el Cierzo; el SIAR desarrolló un código para realizar el cálculo del riesgo de
+ataque de Cercospora en remolacha azucarera.
 
-Este código se aloja en los sistemas informáticos del Gobierno de La Rioja, su funcionamiento permite obtener los datos de redes
-agroclimáticas (SIAR Ministerio Agricultura, CESENS, SIAR La Rioja), calcular el índice de riesgo (DIV) según el modelo Rioja y
-el modelo de Shang y Teng (1989), generar archivos gráficos con figuras y archivos de datos con tablas con información alfanumérica
-y enviar un e-mail a una lista de destinatarios con un informe en pdf y textos descriptivos en el asunto y en el cuerpo del e-mail.
+Este código está escrito en lenguaje R y se aloja en los sistemas informáticos del Gobierno de La Rioja, su funcionamiento permite
+obtener los datos de redes agroclimáticas (SIAR Ministerio Agricultura, CESENS, SIAR La Rioja), calcular el índice de riesgo (DIV) 
+según el modelo Rioja y el modelo de Shang y Teng (1989), generar archivos gráficos con figuras y archivos de datos con tablas con 
+información alfanumérica y enviar un e-mail a una lista de destinatarios con un informe en pdf y textos descriptivos en el asunto y
+en el cuerpo del e-mail.
 
 El código usa una tabla de riesgo horario en función de la temperatura para calcular el DIV. Esta tabla ha sido generada durante 
-el proyecto a partir de la matriz de DIV diario del modelo de Sheng and Teng (1989); para ser plenamente funcional tiene una serie
+el proyecto a partir de la matriz de DIV diario del modelo de Sheng y Teng (1989); para ser plenamente funcional tiene una serie
 de dependencias que consisten en distintas librerías: 
 
 -	clientes API para extraer los datos de las redes agroclimáticas;
